@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\applicationfeatures\\login.feature"},
+		features = {"src\\test\\resources\\applicationfeatures\\loginWithData.feature"},
 		
 		glue = {"steps"},
 		
@@ -13,6 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 		)
 
 
-public class LoginRunner extends AbstractTestNGCucumberTests {
+public class LoginWithDataRunner extends AbstractTestNGCucumberTests
+{
 
 }

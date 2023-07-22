@@ -6,8 +6,6 @@ import io.cucumber.java.en.When;
 
 public class LoginSteps {
 	
-	
-	
 	@When("user enters username")
 	public void enteringUsername()
 	{
@@ -39,18 +37,13 @@ public class LoginSteps {
 	}
 	
 	
-	
-	
-	@Given("user is at the login page")
-	public void navToLoginPage()
-	{
-		System.out.println("At login page");
-	}
-	
 	@Then("page title should get display")
 	public void validatePageTitle()
 	{
 		System.out.println("Validated Page title");
 	}
+	
+
+
 
 }

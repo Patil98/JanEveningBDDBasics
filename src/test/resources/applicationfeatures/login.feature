@@ -7,5 +7,5 @@ And user clicks on login button
 Then user should see the home page
 
 Scenario: Validate title 
-Given user is at the login page
+Given user is at the login screen
 Then page title should get display
