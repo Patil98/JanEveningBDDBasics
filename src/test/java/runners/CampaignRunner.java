@@ -7,9 +7,9 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features = {"src\\test\\resources\\applicationfeatures\\Campaigns.feature"},
 		
-		glue = {"steps"},
+		glue = {"steps", "hooks"},
 		
-		tags = "not @functional"
+		tags = "@campaignfeature"
 			)
 
 

@@ -8,7 +8,7 @@ import io.cucumber.java.BeforeStep;
 public class AppHooks {
 	
 	
-	@Before(order = 1)
+	@Before("@campaignfeature")
 	public void beforeHook()
 	{
 		System.out.println("Before hook is executing");
@@ -20,7 +20,7 @@ public class AppHooks {
 //		System.out.println("Before hook 2");
 //	}
 	
-	@After(order = 1)
+	@After("@functional")
 	public void afterHook()
 	{
 		System.out.println("After hook is executing");
