@@ -2,6 +2,7 @@ package pages;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,7 +39,7 @@ public class HomePage {
 	@FindBy(xpath = "(//*[normalize-space(text())='23'])[2]")
 	WebElement retDate;
 	
-	@FindBy(xpath = "//*[@id='bkmgFlights_travelDates_1_confirmDates']")
+	@FindBy(xpath = "//*[@id='bkmgFlights_travelDates_1_confirmDates123']")
 	WebElement confirmDate;
 	
 	@FindBy(xpath = "//*[@id='bkmgFlights_findButtonContent']")
@@ -51,18 +52,22 @@ public class HomePage {
 	}
 
 	public String fetchTitleOfPage() {
+		wait.until(ExpectedConditions.visibilityOf(signin));
 		String title = driver.getTitle();
 
 		return title;
 	}
 
 	public boolean isSigninDisplay() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		boolean isdisplay = signin.isDisplayed();
 
 		return isdisplay;
 	}
 
 	public void enterCityName(String cityname) {
+		
+		wait.until(ExpectedConditions.visibilityOf(cityField));
 		cityField.sendKeys(cityname);
 
 		Actions act = new Actions(driver);
@@ -90,7 +95,10 @@ public class HomePage {
 	
 	public void clickOnSearchFlight()
 	{
-		searchButton.click();
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		
+		js.executeScript("arguments[0].click();", searchButton);
+		
 	}
 
 }

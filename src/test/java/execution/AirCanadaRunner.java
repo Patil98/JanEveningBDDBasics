@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"execution"},
 		
-		plugin = {"pretty"}
+		plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 			
 		)
 
