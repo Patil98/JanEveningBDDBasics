@@ -1,22 +1,21 @@
 package execution;
 
+import java.sql.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import pages.HomePage;
 import qa.DriverFactory;
 
-public class HomePageSteps {
+public class HomePageSteps 
+{
 	HomePage homepage = new HomePage(DriverFactory.getDriver());
 	
 	@Given("user is at the landing page")
 	public void user_is_at_the_landing_page() {
 	   WebDriver driver = DriverFactory.getDriver();
 	   
-	   driver.get("https://www.aircanada.com/ca/en/aco/home.html");
+	   driver.get("https://www.aircanada.com/");
 	}
 
 	@Then("title of page should contains {string}")
@@ -51,9 +50,5 @@ public class HomePageSteps {
 	@When("click on search flight button")
 	public void click_on_search_flight_button() {
 	   homepage.clickOnSearchFlight();
-	}
-
-	
-	
-	
+	}	
 }

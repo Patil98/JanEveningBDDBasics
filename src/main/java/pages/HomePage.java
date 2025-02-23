@@ -42,7 +42,7 @@ public class HomePage {
 	@FindBy(xpath = "//*[@id='bkmgFlights_travelDates_1_confirmDates']")
 	WebElement confirmDate;
 	
-	@FindBy(xpath = "//*[@id='bkmgFlights_findButtonContent']")
+	@FindBy(xpath = "//*[@id='bkmgFlights_travelDates_1_confirmDatesContent']")
 	WebElement searchButton;
 	
 	public HomePage(WebDriver driver) {

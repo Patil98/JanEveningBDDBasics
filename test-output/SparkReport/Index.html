@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Air Canada Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 28, 2023 08:02:05 pm</span></a>
+<a href="#"><span class="badge badge-primary">Apr 9, 2024 08:09:41 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 28, 2023 08:02:05 pm</h3>
+<h3>Apr 9, 2024 08:09:41 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 28, 2023 08:03:50 pm</h3>
+<h3>Apr 9, 2024 08:11:10 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='77%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='66%'><b>6</b> steps passed</small></div>
 <div>
 <small data-tooltip='11%'><b>1</b> steps failed,
-<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Home page functionality":102.441
+"Home page functionality":88.187
 };
 </script>
 <div class="row">
@@ -208,10 +208,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
+passGrandChild: 6,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 1,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -240,7 +240,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Home page functionality</p>
             <p class="text-sm">
-              <span>8:02:07 pm</span> / <span>00:01:42:441</span>
+              <span>8:09:42 AM</span> / <span>00:01:28:187</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -249,9 +249,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Home page functionality</h5>
-<span class='badge badge-success'>07.28.2023 8:02:07 pm</span>
-<span class='badge badge-danger'>07.28.2023 8:03:50 pm</span>
-<span class='badge badge-default'>00:01:42:441</span>
+<span class='badge badge-success'>04.09.2024 8:09:42 AM</span>
+<span class='badge badge-danger'>04.09.2024 8:11:10 AM</span>
+<span class='badge badge-default'>00:01:28:187</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -318,47 +318,27 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="execution.HomePageSteps.user_enters_the_to_city_as(java.lang.String)">
+              <div class="step fail-bg" title="execution.HomePageSteps.user_enters_the_to_city_as(java.lang.String)">
                 <span>When user enters the to city as "Ottawa"</span>
       <div>
-      </div>
-              </div>
-              <div class="step fail-bg" title="execution.HomePageSteps.enter_the_departure_with_return_date()">
-                <span>And Enter the departure with Return date</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='bkmgFlights_travelDates_1_confirmDates123']"}
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[FirefoxDriver: firefox on windows (e5d348db-ac9e-4983-8752-660d5b314bd1)] -> xpath: //*[@id='bkmgFlights_destination_trip_1']] (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d53e9c637f4d6c54753072f885cfced, findElement {using=xpath, value=//*[@id='bkmgFlights_travelDates_1_confirmDates123']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56609}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56609/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4d53e9c637f4d6c54753072f885cfced
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-	at pages.HomePage.selectDepartureAndReturn(HomePage.java:92)
-	at execution.HomePageSteps.enter_the_departure_with_return_date(HomePageSteps.java:48)
-	at ?.Enter the departure with Return date(file:///F:/Desktop/VimanNagar/May%2021/JanEveningBDDBasics/src/test/resources/execution/Homepage.feature:13)
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.18'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0, moz:accessibilityChecks: false, moz:buildID: 20240213221259, moz:debuggerAddress: 127.0.0.1:13588, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22780, moz:profile: C:\Users\bvp13\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:13588/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e5d348db-ac9e-4983-8752-660d5b314bd1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at pages.HomePage.enterCityName(HomePage.java:70)
+	at execution.HomePageSteps.user_enters_the_to_city_as(HomePageSteps.java:41)
+	at ?.user enters the to city as "Ottawa"(file:///C:/Users/bvp13/git/28JanEveningBDDBasics/src/test/resources/execution/Homepage.feature:12)
 </textarea>
       
+      </div>
+              </div>
+              <div class="step skip-bg" title="execution.HomePageSteps.enter_the_departure_with_return_date()">
+                <span>And Enter the departure with Return date</span>
+      <div>Step skipped
       </div>
               </div>
               <div class="step skip-bg" title="execution.HomePageSteps.click_on_search_flight_button()">
@@ -405,12 +385,12 @@ Session ID: 4d53e9c637f4d6c54753072f885cfced
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="name">org.openqa.selenium.TimeoutException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchElementException</h4>
+<h4>org.openqa.selenium.TimeoutException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -424,11 +404,11 @@ Session ID: 4d53e9c637f4d6c54753072f885cfced
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>20:02:45 pm</td>
+<td>08:10:08 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='18'>And Enter the departure with Return date</a>
+<a href="#" class="linked" test-id='1' id='17'>When user enters the to city as "Ottawa"</a>
 <div class="">
-<span class="badge badge-default">Home page functionality.Search flight.And Enter the departure with Return date</span>
+<span class="badge badge-default">Home page functionality.Search flight.When user enters the to city as "Ottawa"</span>
 </div>
 </td>
 </tr>

@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\execution"},
+		features = {"src\\test\\resources\\execution\\Homepage.feature"},
 		
 		glue = {"execution"},
 		

@@ -20,7 +20,7 @@ public class AppHooks {
 //		System.out.println("Before hook 2");
 //	}
 	
-	@After("@functional")
+	@After(order=1, value="@functional")
 	public void afterHook()
 	{
 		System.out.println("After hook is executing");

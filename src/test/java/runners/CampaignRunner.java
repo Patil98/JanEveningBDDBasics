@@ -9,13 +9,8 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"steps", "hooks"},
 		
-		tags = "@campaignfeature"
-			)
-
-
-
-
-
+		tags = "not @functional"
+		)
 
 public class CampaignRunner extends AbstractTestNGCucumberTests {
 
